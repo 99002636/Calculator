@@ -1,2 +1,2 @@
 # Calculator
-Operations of Calculator
+Various Operations of Calculator
