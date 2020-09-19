@@ -10,6 +10,7 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
+void test_power(void);
 
 /* Start of the application test */
 int main() {
@@ -26,6 +27,7 @@ int main() {
   CU_add_test(suite, "subtract", test_subtract);
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
+  CU_add_test(suite, "power", test_power);
 
 
 /* Note: Do not edit START*/
@@ -67,3 +69,9 @@ void test_divide(void) {
  
   CU_ASSERT(1 == divide(2, 2));
 }
+
+void test_power(void) {
+  CU_ASSERT(1==power(5,0));
+  
+  CU_ASSERT(8==power(2,3));
+}  
